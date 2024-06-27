@@ -169,7 +169,8 @@ label {
 
 .sign-up > .headers {
   margin-left: 4rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   width: 70%;
 }
 
@@ -190,7 +191,7 @@ label {
 
 .forms form > div {
   display: flex;
-  padding: 1rem;
+  margin: 0.5rem;
 }
 
 .forms form > div > span {

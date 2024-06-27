@@ -190,7 +190,7 @@ label {
 
 .forms form > div {
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .forms form > div > span {

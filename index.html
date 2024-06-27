@@ -31,15 +31,16 @@
 
         <div class="forms">
           <h2>Let's Do this</h2>
-          <form action="google.com" method="post">
+          <form action="" method="post" id="main-form">
             <div class="form-names">
               <span>
                 <label for="first-name">First Name</label>
                 <input
                   type="text"
                   id="first-name"
-                  placeholder="bob..."
+                  placeholder="Jim"
                   name="first_name"
+                  required
                 />
               </span>
               <span>
@@ -47,8 +48,9 @@
                 <input
                   type="text"
                   id="last-name"
-                  placeholder="bob..."
-                  name="first-name"
+                  placeholder="Bob"
+                  name="last-name"
+                  required
                 />
               </span>
             </div>
@@ -61,6 +63,7 @@
                   id="email"
                   placeholder="junior@example.com"
                   name="email"
+                  required
                 />
               </span>
               <span>
@@ -70,6 +73,8 @@
                   id="phone-number"
                   placeholder="8881112222"
                   name="phone-nubmer"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  required
                 />
               </span>
             </div>
@@ -81,6 +86,7 @@
                   id="password"
                   placeholder="12345"
                   name="password"
+                  required
                 />
               </span>
               <span>
@@ -90,13 +96,14 @@
                   id="Cassword"
                   placeholder="12345"
                   name="Cassword"
+                  required
                 />
               </span>
             </div>
           </form>
         </div>
         <div class="confirms">
-          <button>Confirm Account</button>
+          <button type="submit" form="main-form">Confirm Account</button>
           <span>
             <p>Already have an account?</p>
             <p>Log In</p>

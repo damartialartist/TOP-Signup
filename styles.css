@@ -199,7 +199,9 @@ label {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
+.forms input:focus {
+  border: blue;
+}
 .forms label {
   display: block;
   font-weight: bold;
@@ -220,7 +222,26 @@ label {
   width: 15rem;
   height: 3rem;
   margin-bottom: 1rem;
+  background-color: #596d48;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.confirms button:hover {
+  border: 2px;
+  border-style: solid;
+  border-color: white;
 }
 .confirms > span > p {
   display: inline;
+}
+
+input:invalid {
+  border-style: solid;
+}
+
+input:valid {
+  border: none;
 }
